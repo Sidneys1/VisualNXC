@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47BA89D6-13A6-4CCC-AF67-E6EF38DFB1EF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Visual_NXC</RootNamespace>
+    <AssemblyName>Visual NXC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <SupportUrl>http://programming.sidneys1.com/</SupportUrl>
+    <ProductName>Visual NXC</ProductName>
+    <PublisherName>Borne Programming</PublisherName>
+    <SuiteName>Visual NXC</SuiteName>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>0.2.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Visual NXC.xml</DocumentationFile>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <NoWarn />
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>G-NXC.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Visual_NXC.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2ED1D87FA0B1D20EDA931660B41F730F39F4C27C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Visual_NXC_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\Visual_NXC.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GlassLib">
+      <HintPath>..\..\..\..\Visual Studio 2008\Dll's\GlassLib.dll</HintPath>
+    </Reference>
+    <Reference Include="STP, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Visual Studio 2008\Projects\Seperator\Seperator\bin\Debug\STP.dll</HintPath>
+    </Reference>
+    <Reference Include="STP.Rgi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\RgiTest2\RgiEngine\bin\Debug\STP.Rgi.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxHighlightingTextBox">
+      <HintPath>..\..\..\..\Visual Studio 2008\Dll's\SyntaxHighlightingTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Code Elements.cs" />
+    <Compile Include="Classes\DrawingHelpers.cs" />
+    <Compile Include="Classes\ExMenuRenderer.cs" />
+    <Compile Include="Classes\Global Settings and Tools.cs" />
+    <Compile Include="Classes\blockParts.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>blockParts.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ngen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\ngen.Designer.cs">
+      <DependentUpon>ngen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Project.cs" />
+    <Compile Include="Controls\highlighterBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\selectCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\selectCheck.designer.cs">
+      <DependentUpon>selectCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\addStructItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\addStructItem.Designer.cs">
+      <DependentUpon>addStructItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\compiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\compiler.Designer.cs">
+      <DependentUpon>compiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\enumEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\enumEdit.Designer.cs">
+      <DependentUpon>enumEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\nxcOutput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\nxcOutput.Designer.cs">
+      <DependentUpon>nxcOutput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\popOutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\popOutForm.Designer.cs">
+      <DependentUpon>popOutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Dialogs\structConstruct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Dialogs\structConstruct.Designer.cs">
+      <DependentUpon>structConstruct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IdeCanvas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\IdeCanvas.Designer.cs">
+      <DependentUpon>IdeCanvas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\tabBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\tabBar.Designer.cs">
+      <DependentUpon>tabBar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Classes\blockParts.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>blockParts.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\IdeCanvas.resx">
+      <DependentUpon>IdeCanvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\selectCheck.resx">
+      <DependentUpon>selectCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\compiler.resx">
+      <DependentUpon>compiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\addStructItem.resx">
+      <DependentUpon>addStructItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\enumEdit.resx">
+      <DependentUpon>enumEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\nxcOutput.resx">
+      <DependentUpon>nxcOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\popOutForm.resx">
+      <DependentUpon>popOutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Dialogs\structConstruct.resx">
+      <DependentUpon>structConstruct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Controls\tabBar.resx">
+      <DependentUpon>tabBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Visual_NXC_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabDeselected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabHover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TabSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\method.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\struct.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control-270_disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control-270.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Changelog.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\dock-left.png" />
+    <None Include="Resources\dock-left-highlight.png" />
+    <None Include="Resources\dock-right.png" />
+    <None Include="Resources\dock-right-highlight.png" />
+    <None Include="Resources\pop-out-highlight.png" />
+    <None Include="Resources\pop-out.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\cross-transparent.png" />
+    <None Include="Resources\cursor.png" />
+    <None Include="Resources\hand - gloved-transparent.png" />
+    <None Include="Resources\hand - gloved.png" />
+    <None Include="Resources\cursor-dark.png" />
+    <None Include="Resources\cursor-transparent.png" />
+    <None Include="Resources\HandClosed.png" />
+    <None Include="Resources\HandOpen.png" />
+    <None Include="Resources\eraser-transparent.png" />
+    <None Include="Resources\eraser.png" />
+    <None Include="Resources\eraser-crosshairs.png" />
+    <None Include="Resources\receipts-text.png" />
+    <None Include="Resources\layer-resize-actual_transparent.png" />
+    <None Include="Resources\layer-resize.png" />
+    <None Include="Resources\layer-resize-actual.png" />
+    <Content Include="VNXC Block API.txt" />
+    <None Include="Resources\menuRight.png" />
+    <None Include="Resources\menuLeft.png" />
+    <None Include="Resources\menuCenter.png" />
+    <None Include="Resources\plus-small.png" />
+    <None Include="Codeview\commands.shf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Codeview\constants.shf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Codeview\keywords.shf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Content Include="G-NXC.ico" />
+    <None Include="Resources\bin-trans.png" />
+    <None Include="Resources\tab_ins.png" />
+    <None Include="Resources\tab.png" />
+    <None Include="Resources\TileBg-HalfOpac.png" />
+    <None Include="Resources\TileBg.png" />
+    <None Include="Resources\right-edge.png" />
+    <None Include="Resources\chevronUp.png" />
+    <None Include="Resources\chevronDown.png" />
+    <None Include="Resources\navigation-270-white.png" />
+    <None Include="Resources\navigation-090-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Changelog.txt">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

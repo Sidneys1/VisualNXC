@@ -1,0 +1,65 @@
+﻿Changelog File:
+	+ Added feature
+	* Fixed feature
+
+	(To-Do's, by priority)
+	1) To-Do: Allow clicking on Navigation Map
+	2) To-Do: Pseudo-scrollbars
+	3) To-Do: Navigation map 'shadowy region'
+	Idea: Add project hosting to website??
+
+	(In-Progress Projects)
+	1) + Struct Constructor
+	2) + Struct Integration
+
+0.2.0.1
+	+ Project Items context menu (Edit, Delete)
+	+ Block API 0.2
+	+ Block Builder Project
+	* Options Working
+	* Optimized lots of code using Code Analysis
+
+
+0.2
+	+ Added Loop blocks
+	+ Added mockup drag-dropping
+	+ Added nested code output and rendering
+	+ Added global 'tab string' value
+	+ Threw together website hastily.
+	+ Pop-out panes.
+	+ Added registry-based cached settings structure.
+	+ Added Navigational Map
+	+ Enum Integration
+	+ structs.h and enums.h, as well as their #include statements are working.
+	* Reskinned Blocks
+	* Converted repositories to Mercurial (from Subversion)
+	* Updated misc. glass functions to work better with Windows 7
+	* Improved website
+	* Broke drag-drop
+	* Fixed drag-drop again...
+	* UI reorganization and resizor grippy recoloring.
+	* Small changes to Enum Editor
+	* Icons for code output
+
+0.1.0.5
+	+ Added 'real' code output.
+	* Finished Enumeration Editor (incomplete) <-wtf does that mean?
+	* Fixed code output to use quotations in the #include statements.
+
+0.1.0.4
+	+ Added syntax highlighting to the NXC code viewer, added MDI parent form for NXC code. Still doesn't actually output code.
+	+ Added options form. (doesn't work yet)
+	+ Added Edit menu.
+	* Changed Treeview theme code over from "#if !MONO" to "try {} catch {}"
+
+0.1.0.3
+	+ Added toolbar.
+	+ Themed treeviews like windows explorer.
+	+ Added ability to open tabs from the "Items:" treeview.
+	+ Added new form for viewing NXC code (doesn't work yet)
+	* LOTS of supporting code...
+	* Fixed XP compatibility.
+	* Improved tab bar.
+
+0.1 to 0.1.0.2:
+	[undocumented] All sorts of shiz. [/undocumented]

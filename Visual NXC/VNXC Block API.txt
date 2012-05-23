@@ -1,0 +1,64 @@
+﻿Visual NXC Block API 0.2
+
+Block (Non-Looping Code)
+	<block>
+		<block_api_version="0.2"/>
+
+		<properties>
+			type="CODE";
+			color="#0B0B0B";
+			name="Wait";
+			category="Program Flow";
+		</properties>
+
+		<vars>
+			INT: "Wait Time";
+		</vars>
+
+		<code>
+			wait(Wait Time);
+		</code>
+	</block>
+
+Block (Looping Code)
+	<block>
+		<block_api_version="0.2"/>
+
+		<properties>
+			type="LOOP";
+			color="#0B0B0B";
+			name="While";
+			category="Logic";
+		</properties>
+
+		<vars>
+			BOOL: "Logic";
+			CODE: "NXC Code";
+		</vars>
+
+		<code>
+			while(Logic)
+			{
+				NXC Code
+			}
+		</code>
+	</block>
+
+Block (Variable Operator)
+	<block>
+		<block_api_version="0.2"/>
+
+		<properties>
+			type="VARIABLE MODIFIER";
+			name="Not";
+			category="BOOL";
+		</properties>
+
+		<vars>
+			BOOL:"variable";
+		</vars>
+
+		<code>
+			!variable;
+		</code>
+	</block>
